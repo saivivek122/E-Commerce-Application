@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./product.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="nav-section">
+            <h5 id="logo">Logo</h5>
+            <input type="text" id="search" placeholder="Find your choice">
+            <h5 id="contact">Contact us</h5>
+        </div>
+
+        <div id="nav-section-two">
+            <div id="nav-section-left">
+                <a href="#" id="home">HOME</a>
+                <a href="#" id="about">ABOUT US</a>
+                <!-- <a href="#">CONTACT US</a> -->
+
+                <!-- <label for="category">Choose your category</label> -->
+                <select id="category">
+                    <option>All Products</option>
+                    <option>men's clothing</option>
+                    <option>women's clothing</option>
+                    <option>jewelery</option>
+                    <option>electronics</option>
+
+                </select>
+
+            </div>
+            <div id="rangeButtons">
+                <p id="rangeText">Sort by price range</p>
+                <input type="range" min="10" max="200" step="10" id="range" value="10">
+                <label for="range" id="rangeTextValue"></label>
+                <button id="clearFilter">Clear filter</button>
+            </div>
+            <div id="nav-section-right">
+                <a href="#" id="logout">LOGOUT</a>
+                <a href="#">WISH LIST</a>
+                <a href="#" id="cart">Cart<i class="bi bi-cart"><sup id="cart-quantity">1</sup></i></a>
+            </div>
+
+            <h1 id="menu"><i class="bi bi-list" id="menu-icon"></i></h1>
+        </div>
+
+    </div>
+
+    <div class="menu-buttons" id="menu-buttons">
+        <a href="#" id="logout-menu">LOGOUT</a>
+        <a href="#">WISH LIST</a>
+        <a href="#" id="cart-menu">Cart<i class="bi bi-cart"><sup id="cart-menu-quantity">1</sup></i></a>
+        <p id="rangeText">Sort by price range</p>
+        <input type="range" min="10" max="200" step="10" id="menuRange" value="10">
+        <label for="range" id="menuRangeTextValue"></label>
+        <button id="menuClearFilter">Clear filter</button>
+    </div>
+    <div id="underline"></div>
+    </div>
+    <div id="loader"></div>
+    <h3 id="product-category">All Products</h3>
+    <div id="product-container">
+        <!-- <div class="products">
+            <div class="section-one">
+                <img class="product-image"
+                    src="https://images.unsplash.com/photo-1756151224665-eba765e8c3b5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <h5>Product Name</h5>
+                <h6>Product Category</h6>
+            </div>
+            <div class="section-two">
+                <p>₹1000</p>
+                <div id="line"></div>
+                <button class="adToCart">Add to cart</button>
+            </div>
+        </div>
+    </div> -->
+    </div>
+    <script src="./product.js"></script>
+
+</body>
+
+</html>
