@@ -7,7 +7,7 @@ let signUpButton = document.getElementById("signUp")
 let homeButton=document.getElementById("home")
 
 
-
+console.log("From the login page")
 let userObj = JSON.parse(localStorage.getItem("signupUser"))
 function userLogin(event) {
     event.preventDefault();
@@ -33,7 +33,7 @@ function userLogin(event) {
             password.value = "";
             confirmPassword.value = "";
             console.log(currentUser[0].email)
-            window.location = "../Public/product.html"
+            window.location = "../product.html"
             sessionStorage.setItem("isLogin", "true")
             sessionStorage.setItem("currentUser", JSON.stringify(currentUser[0].email))
 

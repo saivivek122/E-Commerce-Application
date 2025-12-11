@@ -30,7 +30,7 @@ getImages()
 function login() {
     let currentUser=JSON.parse(sessionStorage.getItem("currentUser"));
     if(currentUser){
-        window.location="../product/product.html"
+        window.location="./product.html"
     }
     else{
     window.location = "./login.html"
