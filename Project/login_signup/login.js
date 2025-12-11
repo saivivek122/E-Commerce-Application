@@ -33,7 +33,7 @@ function userLogin(event) {
             password.value = "";
             confirmPassword.value = "";
             console.log(currentUser[0].email)
-            window.location = "../product/product.html"
+            window.location = "../Public/product.html"
             sessionStorage.setItem("isLogin", "true")
             sessionStorage.setItem("currentUser", JSON.stringify(currentUser[0].email))
 

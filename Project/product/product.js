@@ -196,7 +196,7 @@ logoutButton.addEventListener("click", logout)
 
 function logout() {
     sessionStorage.clear("isLogin");
-    window.location = "../login_signup/login.html"
+    window.location = "../public/login.html"
 }
 
 
